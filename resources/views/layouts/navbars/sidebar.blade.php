@@ -1,7 +1,7 @@
 <div class="sidebar">
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li @if ($pageSlug == 'dashboard') class="active " @endif>
+            {{-- <li @if ($pageSlug == 'dashboard') class="active " @endif>
                 <a href="{{ route('home') }}">
                     <i class="tim-icons icon-chart-bar-32"></i>
                     <p>Dashboard</p>
@@ -10,7 +10,7 @@
 
             <li @if ($pageSlug == 'clients') class="active " @endif>
                 {{-- <a href="{{ route('admission.index') }}"> --}}
-                    <a href="{{url('paymentShedule')}}">
+                    {{-- <a href="{{url('paymentShedule')}}">
                     <i class="tim-icons icon-single-02"></i>
                     <p>Admission</p>
                 </a>
@@ -33,7 +33,7 @@
                     <i class="tim-icons icon-delivery-fast"></i>
                     <p>All Receipts</p>
                 </a>
-            </li>
+            </li> --}} --}}
 
 {{--            <li @if ($pageSlug == 'methods') class="active " @endif>--}}
 {{--                <a href="{{ route('methods.index') }}">--}}
@@ -52,14 +52,14 @@
 
                 <div class="collapse" id="clients">
                     <ul class="nav pl-4">
-                        <li @if ($pageSlug == 'clients-list') class="active " @endif>
-                            <a href="{{ route('clients.index')  }}">
+                        {{-- <li @if ($pageSlug == 'clients-list') class="active " @endif>
+                            <a href="{{ route('clients.index')  }}"> --}}
                                 <i class="tim-icons icon-notes"></i>
                                 <p>Administrar Clients</p>
                             </a>
                         </li>
-                        <li @if ($pageSlug == 'clients-create') class="active " @endif>
-                            <a href="{{ route('clients.create')  }}">
+                        {{-- <li @if ($pageSlug == 'clients-create') class="active " @endif>
+                            <a href="{{ route('clients.create')  }}"> --}}
                                 <i class="tim-icons icon-simple-add"></i>
                                 <p>New Client</p>
                             </a>
@@ -96,7 +96,7 @@
                                 <p>Payments Summary3</p>
                             </a>
                         </li>
-                        <li @if ($pageSlug == 'users-list') class="active " @endif>
+                        {{-- <li @if ($pageSlug == 'users-list') class="active " @endif>
                             <a href="{{ route('users.index')  }}">
                                 <i class="tim-icons icon-notes"></i>
                                 <p>Manage Users</p>
@@ -107,14 +107,14 @@
                                 <i class="tim-icons icon-simple-add"></i>
                                 <p>New user</p>
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </li>
 
 
 
-            <li>
+            {{-- <li>
                 <a data-toggle="collapse" href="#users" {{ $section == 'users' ? 'aria-expanded=true' : '' }}>
                     <i class="tim-icons icon-badge" ></i>
                     <p>Users</p>
@@ -143,7 +143,7 @@
                         </li>
                     </ul>
                 </div>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </div>

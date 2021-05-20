@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div>
                                     <div class="form-group{{ $errors->has('stock') ? ' has-danger' : '' }}">
-                                        <label class="form-control-label" for="input-stock"><p>Service Type</p></label>
+                                        <label class="form-control-label" for="input-stock"><p>Call _Status</p></label>
                                         <select name="service" id="home_area" class="form-select2 form-control" required>
                                             @foreach ($services as $service)
 
@@ -39,7 +39,7 @@
                                 </div>
                                 <div>
                                     <div class="form-group{{ $errors->has('stock') ? ' has-danger' : '' }}">
-                                        <label class="form-control-label" for="input-stock"><p>Service Type</p></label>
+                                        <label class="form-control-label" for="input-stock"><p>Client_Name</p></label>
                                         <select name="client" id="client" class="form-select2 form-control" required>
                                             @foreach ($client as $clients)
 
@@ -48,7 +48,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                {{-- <div class="col-4">
                                     <div class="form-group{{ $errors->has('stock_defective') ? ' has-danger' : '' }}">
                                         <label class="form-control-label" for="input-stock_defective"><p>Start Date:</p></label>
                                         <input type="date" name="date1" id="subcounty" class="form-control" value="">
@@ -59,7 +59,7 @@
                                         <label class="form-control-label" for="input-price"><p>End Date</p></label>
                                         <input type="date"  name="date2" id="home_area" class="form-control" value="">
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="col-4">
                                     <div class="form-group{{ $errors->has('price') ? ' has-danger' : '' }}">
                                         {{-- <label class="form-control-label" for="input-price"><p>End Date</p></label> --}}

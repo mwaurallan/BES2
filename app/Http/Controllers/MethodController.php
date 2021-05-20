@@ -86,6 +86,7 @@ if($request->user_id==1){
 
         $orders = DB::table('case_files')->where('case_files.status_id',$request->service) 
                 ->where('case_files.officer_id',$request->user_id)
+                ->where('case_files.client_id',$request->client)
                ->join('customers','customers.id','=','case_files.customer_id')  
               ->join('clients','clients.id','=','case_files.client_id')
                ->join('case_file_statuses','case_file_statuses.id','=','case_files.status_id')

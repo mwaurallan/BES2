@@ -37,6 +37,17 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div>
+                                    <div class="form-group{{ $errors->has('stock') ? ' has-danger' : '' }}">
+                                        <label class="form-control-label" for="input-stock"><p>Service Type</p></label>
+                                        <select name="client" id="client" class="form-select2 form-control" required>
+                                            @foreach ($client as $clients)
+
+                                                <option value="{{$clients->id}}" selected>{{$clients->name}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="col-4">
                                     <div class="form-group{{ $errors->has('stock_defective') ? ' has-danger' : '' }}">
                                         <label class="form-control-label" for="input-stock_defective"><p>Start Date:</p></label>

@@ -9,7 +9,7 @@
                 <div class="card-header">
                     <div class="row no-gutters">
                         <div class="col-auto">
-                            <img src="{{ asset('assets/img/logo10.jpeg') }}" width="300" height="300" class="img-fluid" alt="Uphome Logo">
+                            {{-- <img src="{{ asset('assets/img/logo10.jpeg') }}" width="300" height="300" class="img-fluid" alt="Uphome Logo"> --}}
                         </div>
                         <div class="col">
                             <div class="card-block px-6" align="center">
